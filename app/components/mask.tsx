@@ -292,12 +292,12 @@ export function MaskPage() {
             </select>
 
             <div className={styles["mask-create"]}>
-              {/* <IconButton  //新建角色（面具）按钮选项，注释后已隐藏
+              <IconButton //新建角色（面具）按钮选项，注释后已隐藏
                 icon={<AddIcon />}
                 text={Locale.Mask.Page.Create}
                 bordered
                 onClick={() => maskStore.create()}
-              /> */}
+              />
             </div>
           </div>
 
@@ -326,8 +326,7 @@ export function MaskPage() {
                       navigate(Path.Chat);
                     }}
                   />
-                  {m.builtin ? //   onClick={() => setEditingMaskId(m.id)} //   text={Locale.Mask.Item.View} //   icon={<EyeIcon />} // <IconButton
-                  // />
+                  {m.builtin ? // /> //   onClick={() => setEditingMaskId(m.id)} //   text={Locale.Mask.Item.View} //   icon={<EyeIcon />} // <IconButton
                   null : (
                     <IconButton
                       icon={<EditIcon />}
