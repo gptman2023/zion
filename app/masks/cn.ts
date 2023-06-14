@@ -112,9 +112,6 @@ export const CN_MASKS: BuiltinMask[] = [
     lang: "cn",
     builtin: true,
   },
-    lang: "cn",
-    builtin: true,
-  },
   {
     avatar: "1f47e",
     name: "gpt3.5plus",
