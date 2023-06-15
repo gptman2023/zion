@@ -311,9 +311,9 @@ export function MaskPage() {
                   <div className={styles["mask-title"]}>
                     <div className={styles["mask-name"]}>{m.name}</div>
                     <div className={styles["mask-info"] + " one-line"}>
-                      {`${Locale.Mask.Item.Info(m.context.length)} / ${
+                      {/* {`${Locale.Mask.Item.Info(m.context.length)} / ${
                         Locale.Settings.Lang.Options[m.lang]
-                      } / ${m.modelConfig.model}`}
+                      } / ${m.modelConfig.model}`} */}
                     </div>
                   </div>
                 </div>
@@ -326,8 +326,7 @@ export function MaskPage() {
                       navigate(Path.Chat);
                     }}
                   />
-                  {m.builtin ? // /> //   onClick={() => setEditingMaskId(m.id)} //   text={Locale.Mask.Item.View} //   icon={<EyeIcon />} // <IconButton
-                  null : (
+                  {m.builtin ? null : ( // /> //   onClick={() => setEditingMaskId(m.id)} //   text={Locale.Mask.Item.View} //   icon={<EyeIcon />} // <IconButton
                     <IconButton
                       icon={<EditIcon />}
                       text={Locale.Mask.Item.Edit}
