@@ -143,14 +143,11 @@ export function SideBar(props: { className?: string }) {
           </div>
           <div className={styles["sidebar-action"]}>
             <Link to={Path.Settings}>
-              <IconButton icon={<SettingsIcon />} shadow>
-                设置
-              </IconButton>
+              <IconButton icon={<SettingsIcon />} shadow />
             </Link>
           </div>
           <div className={styles["sidebar-action"]}>
             <a href={REPO_URL} target="_blank">
-              星球
               <IconButton icon={<GithubIcon />} shadow />
             </a>
           </div>
@@ -158,16 +155,14 @@ export function SideBar(props: { className?: string }) {
             <a href={ZILIAOKU_URL} target="_blank">
               {" "}
               {/*添加资料库新按钮在此处*/}
-              资料库
               <IconButton icon={<ZiliaokuIcon />} shadow />
             </a>
           </div>
         </div>
         <div>
-          新的角色
           <IconButton
             icon={<AddIcon />}
-            // text={shouldNarrow ? undefined : Locale.Home.NewChat}
+            text={shouldNarrow ? undefined : Locale.Home.NewChat}
             onClick={() => {
               if (config.dontShowMaskSplashScreen) {
                 chatStore.newSession();
