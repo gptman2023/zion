@@ -54,11 +54,15 @@ const ENABLE_GPT4 = true;
 
 export const ALL_MODELS = [
   {
+    name: "gpt-4-16k",
+    available: ENABLE_GPT4,
+  },
+  {
     name: "gpt-4",
     available: ENABLE_GPT4,
   },
   {
-    name: "gpt-4-0314",
+    name: "gpt-4-16k-0613",
     available: ENABLE_GPT4,
   },
   {
@@ -74,7 +78,15 @@ export const ALL_MODELS = [
     available: true,
   },
   {
-    name: "gpt-3.5-turbo-0301",
+    name: "gpt-3.5-turbo-0613",
+    available: true,
+  },
+  {
+    name: "gpt-3.5-turbo-16k-0613",
+    available: true,
+  },
+  {
+    name: "gpt-3.5-turbo-16k",
     available: true,
   },
 ] as const;
