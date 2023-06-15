@@ -311,9 +311,10 @@ export function MaskPage() {
                   <div className={styles["mask-title"]}>
                     <div className={styles["mask-name"]}>{m.name}</div>
                     <div className={styles["mask-info"] + " one-line"}>
-                      {/* {`${Locale.Mask.Item.Info(m.context.length)} / ${  //注释角色下的介绍(包含)几条预设对话
+                      {`${Locale.Mask.Item.Info(m.context.length)} / ${
+                        //注释角色下的介绍(包含)几条预设对话
                         Locale.Settings.Lang.Options[m.lang]
-                      } / ${m.modelConfig.model}`} */}
+                      } / ${m.modelConfig.model}`}
                     </div>
                   </div>
                 </div>
