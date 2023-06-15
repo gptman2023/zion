@@ -209,7 +209,7 @@ const en: LocaleType = {
       Create: "Create",
     },
     Item: {
-      Info: (count: number) => `${count} prompts`,
+      // Info: (count: number) => `${count} prompts`,
       Chat: "Chat",
       View: "View",
       Edit: "Edit",
