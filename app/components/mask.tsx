@@ -269,7 +269,7 @@ export function MaskPage() {
               autoFocus
               onInput={(e) => onSearch(e.currentTarget.value)}
             />
-            <select
+            {/* <select
               className={styles["mask-filter-lang"]}
               value={filterLang ?? Locale.Settings.Lang.All}
               onChange={(e) => {
@@ -289,7 +289,7 @@ export function MaskPage() {
                   {Locale.Settings.Lang.Options[lang]}
                 </option>
               ))}
-            </select>
+            </select> //隐藏所有语言的按钮 */}
 
             <div className={styles["mask-create"]}>
               <IconButton //新建角色（面具）按钮选项，注释后已隐藏
@@ -310,13 +310,13 @@ export function MaskPage() {
                   </div>
                   <div className={styles["mask-title"]}>
                     <div className={styles["mask-name"]}>{m.name}</div>
-                    <div className={styles["mask-info"] + " one-line"}>
+                    {/* <div className={styles["mask-info"] + " one-line"}>
                       {`${Locale.Mask.Item.Info(m.context.length)} / ${
                         //注释角色下的介绍(包含)几条预设对话
                         Locale.Settings.Lang.Options[m.lang]
-                      } / ${m.modelConfig.model}`}
-                    </div>
+                      } / ${m.modelConfig.model}`} */}
                   </div>
+                  {/* </div> //注释角色下的介绍(包含)几条预设对话*/}
                 </div>
                 <div className={styles["mask-actions"]}>
                   <IconButton
