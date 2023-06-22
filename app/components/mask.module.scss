@@ -208,6 +208,7 @@
         flex-wrap: nowrap;
         transition: all ease 0.3s;
         max-width: 50% // 你想要的宽度, 比如 200px 或 50%;调整大小
+        margin-left: auto;
       }
 
       @media screen and (max-width: 600px) {
